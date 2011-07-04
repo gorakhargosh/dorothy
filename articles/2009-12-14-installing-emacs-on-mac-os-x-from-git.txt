@@ -8,31 +8,43 @@ of the "which editor do I use on this OS" problem for me.
 I'm constantly switching between multiple operating systems
 and having to remember different key-bindings, different
 functionality, and different user interfaces for different
-editors and operating system is a major pain. Yes, I prefer
+editors and operating systems is a major pain. Yes, I prefer
 the keyboard to the mouse even on OS X. It boils down to:
 
-> Emacs allows me to memorize only on set of keyboard shortcuts.
+> Emacs allows me to memorize only one set of keyboard shortcuts.
 
-Now, I could use [Aquamacs][aquamacs] on OS X, but I don't really think it
-fits my tiny brain. GNU Emacs, on the other hand, gives me the
-same familiar classic feeling of using it on, say a Linux. Also,
-accessing Aquamacs from the terminal to do a batch compile
-of elips modules is equivalent to tying your hair to a horse's
-tail and letting the horse gallop free! Aquamacs does not use
-the standard Emacs options and breaks builds for various packages.
+Now, I could use [Aquamacs][aquamacs] on OS X, and I tried. 
 
-I ended up removing Aquamacs and installed [Emacs for Mac OS X][emacsformacosx]. 
-Sadly, symlinking it and using it in the Terminal was easier, 
-but batch-compiling proved to be a major failure.
+> Really.
 
-Therefore, I decided to do this the good way——compile it from source.
-You need the Mac OS X developer tools installed before you do any 
-of this. Oh, and you need [git][git].
+But it's like jelly and doesn't fits my tiny brain. GNU Emacs, 
+on the other hand, gives me the same familiar classic feeling of 
+using it on, say a Linux. Accessing Aquamacs from the terminal 
+to do a batch compile of elisp modules is equivalent to tying 
+your hair to a horse's tail and letting the horse gallop free! 
+Aquamacs does not use the standard Emacs options and breaks 
+builds for various packages.
+
+I ended up removing Aquamacs and installed 
+[Emacs for Mac OS X][emacsformacosx]. Sadly, symlinking it in 
+the Terminal was easier, but broken batch-compiling proved to be 
+a downside.
+
+Therefore, I decided to do this the good way—the way good 
+programmers do.
+
+> I compiled it from source.
+
+You will need the Mac OS X developer tools installed before 
+you do any of this. Oh, and as is apparent, you need [git][git].
+Without further ado.
+
+### Grab the Emacs source code
 
     $ git clone git://git.savannah.gnu.org/emacs.git
     $ cd emacs
     
-### GNU Emacs for the GUI
+### Emacs for the GUI
 
     $ ./configure --with-ns      # <-- No --prefix=...
     $ make bootstrap
@@ -40,19 +52,19 @@ of this. Oh, and you need [git][git].
     $ make install               # Yes, *without* sudo.
     $ sudo cp -r nextstep/Emacs.app /Applications/Emacs.app
     
-### GNU Emacs for the Terminal
+### Emacs for the Terminal
 
     $ ./configure --prefix=/usr/local --without-x   # <-- with the --prefix=...
     $ make bootstrap
     $ make -j4
     $ sudo make install          # *with* sudo.
 
-If you don't include a `--prefix` argument to the `configure` script
+If you don't include the `--prefix` option to the `configure` script
 and use the `--with-ns` option, the application bundle will be built
-when you type `make install` instead of actually installing on your
-system. On the other hand, using `configure` with the `--with-ns` 
-option means you want `make install` to install a command line version
-of Emacs.
+when you type `make install` instead of actually installing anything 
+on your system. On the other hand, using `configure` with the 
+`--with-ns` option means you want `make install` to install a 
+command-line version of Emacs.
 
 All set!
 
