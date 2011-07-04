@@ -4,7 +4,7 @@ date: 2009/12/14
 slug: installing-emacs-on-mac-os-x-from-git
 
 One of the many reasons I use Emacs is because it gets rid 
-of the "which editor do I use on this OS" problem for me. 
+of the "Which editor do I use on this OS?" problem for me. 
 I'm constantly switching between multiple operating systems
 and having to remember different key-bindings, different
 functionality, and different user interfaces for different
