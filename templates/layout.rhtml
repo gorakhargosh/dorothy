@@ -1,18 +1,42 @@
 <!doctype html>
 <html>
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="<%= @context[:description] || 'Gora Khargosh' %>"> 
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
-    <title><%= title %></title>
+    <title>
+        <% if @path == 'index' %>
+            Here, here, wabbit!
+        <% elsif @path.split('/').compact.length == 4 %>
+            <%= title %> - Here, here, wabbit!
+        <% else %>
+            <%= @path.capitalize.gsub(/[-]/, ' ') %> - Here, here, wabbit!
+        <% end %>
+    </title>
   </head>
   <body>
     <section>
       <%= yield %> 
     </section>
     <footer>
-      powered by <a href="http://cloudhead.io/toto">toto</a>
+        <ul>
+            <li <%= ' class="active"' if @path == 'index' %>>
+                <a href="/">Home</a>
+            </li>
+            <li <%= ' class="active"' if @path == 'archive' %>>
+                <a href="/archive">Archive</a>
+            </li>
+        </ul>
+        powered by <a href="http://cloudhead.io/toto">toto</a>
     </footer>
+    <script>
+    var _gaq=[['_setAccount','UA-24357217-1'],['_trackPageview']];
+(function(d,t){
+var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+g.async=1;g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)
+}(document,'script'))
+    </script>
   </body>
 </html>
-

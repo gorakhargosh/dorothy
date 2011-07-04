@@ -13,6 +13,13 @@ end
 # Create and configure a toto instance
 #
 toto = Toto::Server.new do
+    set :author, "Gora Khargosh"
+    set :date, lambda {|now| now.strftime("%d %b %Y") }
+    set :summary, :max => 1000, :delim => /~\n/
+    set :disqus, 'gorakhargosh'
+    set :title, 'Gora Khargosh'
+    set :url, 'http://gorakhargosh.heroku.com'
+
   #
   # Add your settings here
   # set [:setting], [value]

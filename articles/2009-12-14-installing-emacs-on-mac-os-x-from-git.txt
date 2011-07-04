@@ -2,8 +2,9 @@ title: "I like the way Aquamacs looks. I don't use it because it feels different
 author: Khargosh
 date: 2009/12/14
 slug: installing-emacs-on-mac-os-x-from-git
+description: "Installing GNU Emacs from source code on Mac OS X."
 
-One of the many reasons I use [Emacs][] is because it gets rid 
+One of the many reasons I use Emacs is because it gets rid 
 of the "Which editor do I use on this OS?" problem for me. 
 I'm constantly switching between multiple operating systems
 and having to remember different key-bindings, different
@@ -22,7 +23,7 @@ Aquamacs from the terminal to do a batch compilation of [Elisp][]
 modules is equivalent to tying your hair to a horse's tail 
 and letting the horse gallop right ahead!
  
-> Aquamacs does not use the standard Emacs options and breaks 
+> Aquamacs does not use the standard [Emacs][] options and breaks 
 builds for various packages.
 
 I ended up removing Aquamacs and installed 
