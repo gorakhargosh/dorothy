@@ -18,7 +18,7 @@ Now, I could use [Aquamacs][] on OS X, and I tried.
 > Really.
 
 But it's like jelly and doesn't fit my tiny brain. Accessing 
-Aquamacs from the terminalto do a batch compilation of [Elisp][] 
+Aquamacs from the terminal to do a batch compilation of [Elisp][] 
 modules is equivalent to tying your hair to a horse's tail 
 and letting the horse gallop right ahead!
  
@@ -36,8 +36,8 @@ programmers do.
 > I compiled Emacs from source code.
 
 You will need the [Mac OS X developer tools][xcode] installed before 
-you do any of this. Oh, and as is apparent, you need [git][git].
-Without further ado.
+you do any of this. Oh, and as is apparent, you will need 
+[git][git]. So, without further ado let's:
 
 ### Grab the Emacs source code
 
