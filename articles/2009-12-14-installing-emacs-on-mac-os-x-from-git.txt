@@ -13,16 +13,16 @@ the keyboard to the mouse even on OS X. It boils down to:
 
 > Emacs allows me to memorize only one set of keyboard shortcuts.
 
-Now, I could use [Aquamacs][aquamacs] on OS X, and I tried. 
+Now, I could use [Aquamacs][] on OS X, and I tried. 
 
 > Really.
 
-But it's like jelly and doesn't fits my tiny brain. GNU Emacs, 
-on the other hand, gives me the same familiar classic feeling of 
-using it on, say a Linux. Accessing Aquamacs from the terminal 
-to do a batch compile of elisp modules is equivalent to tying 
-your hair to a horse's tail and letting the horse gallop free! 
-Aquamacs does not use the standard Emacs options and breaks 
+But it's like jelly and doesn't fit my tiny brain. Accessing 
+Aquamacs from the terminalto do a batch compilation of [Elisp][] 
+modules is equivalent to tying your hair to a horse's tail 
+and letting the horse gallop right ahead!
+ 
+> Aquamacs does not use the standard Emacs options and breaks 
 builds for various packages.
 
 I ended up removing Aquamacs and installed 
@@ -31,11 +31,11 @@ the Terminal was easier, but broken batch-compiling proved to be
 a downside.
 
 Therefore, I decided to do this the good way—the way good 
-programmers do.
+programmers do. 
 
-> I compiled it from source.
+> I compiled [GNU Emacs][] from source.
 
-You will need the Mac OS X developer tools installed before 
+You will need the [Mac OS X developer tools][xcode] installed before 
 you do any of this. Oh, and as is apparent, you need [git][git].
 Without further ado.
 
@@ -68,7 +68,9 @@ command-line version of Emacs.
 
 All set!
 
-
+[xcode]: http://developer.apple.com/technologies/tools/ "Apple Xcode"
+[GNU Emacs]: http://www.gnu.org/software/emacs/ "GNU Emacs"
+[Elisp]: http://en.wikipedia.org/wiki/Emacs_Lisp "Emacs Lisp"
 [emacsformacosx]: http://emacsformacosx.com  "Emacs for Mac OS X"
-[aquamacs]: http://aquamacs.org/ "Aquamacs"
+[Aquamacs]: http://aquamacs.org/ "Aquamacs"
 [git]: http://git-scm.org/ "Git SCM"
