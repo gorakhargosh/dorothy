@@ -3,7 +3,7 @@ author: Khargosh
 date: 2009/12/14
 slug: installing-emacs-on-mac-os-x-from-git
 
-One of the many reasons I use Emacs is because it gets rid 
+One of the many reasons I use [Emacs][] is because it gets rid 
 of the "Which editor do I use on this OS?" problem for me. 
 I'm constantly switching between multiple operating systems
 and having to remember different key-bindings, different
@@ -33,7 +33,7 @@ a downside.
 Therefore, I decided to do this the good way—the way good 
 programmers do. 
 
-> I compiled [GNU Emacs][] from source.
+> I compiled Emacs from source code.
 
 You will need the [Mac OS X developer tools][xcode] installed before 
 you do any of this. Oh, and as is apparent, you need [git][git].
@@ -69,7 +69,7 @@ command-line version of Emacs.
 All set!
 
 [xcode]: http://developer.apple.com/technologies/tools/ "Apple Xcode"
-[GNU Emacs]: http://www.gnu.org/software/emacs/ "GNU Emacs"
+[Emacs]: http://www.gnu.org/software/emacs/ "GNU Emacs"
 [Elisp]: http://en.wikipedia.org/wiki/Emacs_Lisp "Emacs Lisp"
 [emacsformacosx]: http://emacsformacosx.com  "Emacs for Mac OS X"
 [Aquamacs]: http://aquamacs.org/ "Aquamacs"
