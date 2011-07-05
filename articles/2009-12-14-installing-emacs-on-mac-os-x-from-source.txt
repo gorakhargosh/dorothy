@@ -6,6 +6,9 @@ description: "Installing GNU Emacs from source code on Mac OS X."
 
 One of the many reasons I use Emacs is because it gets rid 
 of the "Which editor do I use on this OS?" problem for me. 
+Here is how you can install Emacs on Mac OS X from source code. 
+~
+
 I'm constantly switching between multiple operating systems
 and having to remember different key-bindings, different
 functionality, and different user interfaces for different

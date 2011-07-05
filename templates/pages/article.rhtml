@@ -2,7 +2,6 @@
   <header>
     <h1><%= title %></h1>
     <span class="date"><%= date %></span>
-    <a href="<%= article.path %>#disqus_thread">0 Comments</a>
   </header>
 
   <section class="content">
@@ -10,6 +9,7 @@
   </section>
 
   <section class="comments">
+    <a href="<%= article.path %>#disqus_thread">0 Comments</a>
     <% if @config[:disqus] %>
       <div id="disqus_thread"></div>
       <script type="text/javascript" src="http://disqus.com/forums/<%= @config[:disqus] %>/embed.js"> </script>
